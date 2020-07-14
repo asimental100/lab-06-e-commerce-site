@@ -30,4 +30,8 @@ section {
     border-radius: 5px;
     margin-left: 5px;
     margin-right: 5px;
-  }
+}
+
+#product-list {
+    display: inline-block;
+}

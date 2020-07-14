@@ -1,7 +1,7 @@
-import { currentProducts } from './products.js';
+import { currentProducts } from '../products/products.js'
 
 const homeButton = document.getElementById("go-home");
-const cartButton = document.getElementById("go-to-cart");
+const productPageButton = document.getElementById("go-to-products");
 
 const productList = document.getElementById("product-list");
 
@@ -13,7 +13,7 @@ homeButton.addEventListener('click', () => {
     console.log(`Home button clicked ${counter1} times!`);
 })
 
-cartButton.addEventListener('click', () => {
+productPageButton.addEventListener('click', () => {
     counter2++;
-    console.log(`Cart button clicked ${counter2} times!`);
+    console.log(`Product button clicked ${counter2} times!`);
 })
