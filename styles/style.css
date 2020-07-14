@@ -13,7 +13,11 @@ body {
 
 body {
     text-align: center;
-    list-style: none;
+}
+
+img {
+    height: 300px;
+    width: auto;
 }
 
 section {
@@ -33,5 +37,5 @@ section {
 }
 
 #product-list {
-    display: inline-block;
+    list-style: none;
 }

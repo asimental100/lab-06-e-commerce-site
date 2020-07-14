@@ -1,4 +1,4 @@
-import { currentProducts } from './products.js';
+import { currentProducts } from './products.js'
 import { renderClothes } from './renderClothes.js';
 /*
 const homeButton = document.getElementById("go-home");

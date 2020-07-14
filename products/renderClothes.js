@@ -1,4 +1,4 @@
-function renderClothes(clothingItem) {
+export function renderClothes(clothingItem) {
     const li = document.createElement('li');
     li.className = clothingItem.category;
     li.title = clothingItem.description;
@@ -28,5 +28,3 @@ function renderClothes(clothingItem) {
 
     return li;
 }
-
-export default renderClothes;

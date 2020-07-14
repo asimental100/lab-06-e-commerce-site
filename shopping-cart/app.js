@@ -1,3 +1,4 @@
+/*
 import { currentProducts } from '../products/products.js';
 import { cart } from './cart.js';
 
@@ -18,3 +19,4 @@ productPageButton.addEventListener('click', () => {
     counter2++;
     console.log(`Product button clicked ${counter2} times!`);
 })
+*/

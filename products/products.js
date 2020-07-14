@@ -1,7 +1,7 @@
 const navyShirt = {
     id: 'navy-shirt',
     name: 'Navy Shirt',
-    image: './images/navy-shirt.jpg',
+    image: './navy-shirt.jpg',
     size: 'large',
     color: 'navy',
     category: 'shirts',
@@ -12,7 +12,7 @@ const navyShirt = {
 const blackShirt = {
     id: 'black-shirt',
     name: 'Black Shirt',
-    image: './images/black-shirt.jpg',
+    image: './black-shirt.jpg',
     size: 'large',
     color: 'black',
     category: 'shirts',
@@ -23,7 +23,7 @@ const blackShirt = {
 const greenShirt = {
     id: 'green-shirt',
     name: 'Green Shirt',
-    image: './images/green-shirt.jpg',
+    image: './green-shirt.jpg',
     size: 'large',
     color: 'green',
     category: 'shirts',
@@ -34,7 +34,7 @@ const greenShirt = {
 const redShirt = {
     id: 'red-shirt',
     name: 'Red Shirt',
-    image: './images/red-shirt.jpg',
+    image: './red-shirt.jpg',
     size: 'large',
     color: 'red',
     category: 'shirts',
@@ -45,7 +45,7 @@ const redShirt = {
 const whiteShirt = {
     id: 'white-shirt',
     name: 'White Shirt',
-    image: './images/white-shirt.jpg',
+    image: './white-shirt.jpg',
     size: 'large',
     color: 'white',
     category: 'shirts',
@@ -53,12 +53,10 @@ const whiteShirt = {
     price: 25
 };
 
-const currentProducts = [
+export const currentProducts = [
     navyShirt,
     blackShirt,
     greenShirt,
     redShirt,
     whiteShirt
 ];
-
-export default currentProducts;
