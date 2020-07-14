@@ -1,0 +1,33 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color1: hsla(129, 8%, 61%, 1);
+    --color2: hsla(143, 23%, 75%, 1);
+    --color3: hsla(85, 17%, 77%, 1);
+    --color4: hsla(50, 19%, 83%, 1);
+    --color5: hsla(70, 16%, 89%, 1);
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+
+body {
+    text-align: center;
+    
+}
+
+section {
+    padding: 20px 0 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color5);
+    background-color: var(--color1);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
