@@ -1,4 +1,4 @@
-const cart = [
+export const cart = [
     {
         id: 'navy-shirt',
         quantity: 1
@@ -21,4 +21,12 @@ const cart = [
     }
 ]
 
-export default cart;
+export function findById(arrayName, idName) {
+    let item = {};
+    for (let i = 0; i < arrayName.length; i++) {
+        if (arrayName[i].id === idName) {
+            item = arrayName[i];
+        }
+    }
+    return item;
+}
