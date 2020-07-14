@@ -4,7 +4,9 @@ const navyShirt = {
     image: './images/navy-shirt.jpg',
     size: 'large',
     color: 'navy',
-    price: 25.00
+    category: 'shirts',
+    description: 'A 100% Supima Cotton Shirt in Navy',
+    price: 25
 };
 
 const blackShirt = {
@@ -13,7 +15,9 @@ const blackShirt = {
     image: './images/black-shirt.jpg',
     size: 'large',
     color: 'black',
-    price: 25.00
+    category: 'shirts',
+    description: 'A 100% Supima Cotton Shirt in Black',
+    price: 25
 };
 
 const greenShirt = {
@@ -22,7 +26,9 @@ const greenShirt = {
     image: './images/green-shirt.jpg',
     size: 'large',
     color: 'green',
-    price: 25.00
+    category: 'shirts',
+    description: 'A 100% Supima Cotton Shirt in Green',
+    price: 25
 };
 
 const redShirt = {
@@ -31,7 +37,9 @@ const redShirt = {
     image: './images/red-shirt.jpg',
     size: 'large',
     color: 'red',
-    price: 25.00
+    category: 'shirts',
+    description: 'A 100% Supima Cotton Shirt in Red',
+    price: 25
 };
 
 const whiteShirt = {
@@ -40,13 +48,17 @@ const whiteShirt = {
     image: './images/white-shirt.jpg',
     size: 'large',
     color: 'white',
-    price: 25.00
+    category: 'shirts',
+    description: 'A 100% Supima Cotton Shirt in White',
+    price: 25
 };
 
-export const currentProducts = [
+const currentProducts = [
     navyShirt,
     blackShirt,
     greenShirt,
     redShirt,
     whiteShirt
 ];
+
+export default currentProducts;

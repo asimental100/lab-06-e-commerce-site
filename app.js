@@ -11,6 +11,7 @@ let counter2 = 0;
 productPageButton.addEventListener('click', () => {
     counter1++;
     console.log(`Product button clicked ${counter1} times!`);
+    productList.textContent = currentProducts;
 })
 
 cartButton.addEventListener('click', () => {

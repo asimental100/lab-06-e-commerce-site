@@ -1,4 +1,5 @@
-import { currentProducts } from '../products/products.js'
+import { currentProducts } from '../products/products.js';
+import { cart } from './cart.js';
 
 const homeButton = document.getElementById("go-home");
 const productPageButton = document.getElementById("go-to-products");
