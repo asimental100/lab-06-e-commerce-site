@@ -1,3 +1,5 @@
+import { getCart } from '../utils.js'
+
 export function renderClothes(clothingItem) {
     const li = document.createElement('li');
     li.className = clothingItem.category;
@@ -22,6 +24,10 @@ export function renderClothes(clothingItem) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = clothingItem.code;
+    button.addEventListener('click', () => {
+        console.log('ID: ' + clothingItem.id);
+        const cart = getCart();
+    })
     p.appendChild(button);
 
     li.appendChild(p);

@@ -1,10 +1,11 @@
-import { findById, toUSD, calcOrderTotal } from '../utils.js';
-import { cart } from './cart.js'
+import { findById, toUSD, calcOrderTotal, getCart } from '../utils.js';
 import { currentProducts } from '../products/products.js'
 import { renderTableRow } from './renderCart.js'
 
 const tableBody = document.querySelector('tbody');
 const orderTotalCell = document.getElementById('order-total');
+
+let cart = getCart();
 
 for (let i = 0; i < cart.length; i++) {
     
