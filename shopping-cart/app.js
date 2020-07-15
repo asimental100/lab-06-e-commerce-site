@@ -3,8 +3,8 @@ import { cart } from './cart.js'
 import { currentProducts } from '../products/products.js'
 import { renderTableRow } from './renderCart.js'
 
-const tbody = document.querySelector('tbody');
-const orderTotalCell = document.getElementById('order-total-cell');
+const tableBody = document.querySelector('tbody');
+const orderTotalCell = document.getElementById('order-total');
 
 for (let i = 0; i < cart.length; i++) {
     
@@ -14,7 +14,7 @@ for (let i = 0; i < cart.length; i++) {
 
     const dom = renderTableRow(cartItem, clothesItem);
 
-    tbody.appendChild(dom);
+    tableBody.appendChild(dom);
 }
 
 

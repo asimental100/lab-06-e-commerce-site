@@ -9,9 +9,6 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-}
-
-body {
     text-align: center;
 }
 
@@ -32,70 +29,44 @@ section {
     color: var(--color5);
     background-color: var(--color1);
     border-radius: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: auto;
+    margin: 5px;
 }
 
-#product-list {
+#product-list li {
     list-style: none;
+    display: inline-block;
+    padding: 4px;
 }
 
-
-table, .order-button-container {
-    width: 100%;
-    max-width: 750px;
+#product-list li button {
+    display: block;
     margin: auto;
 }
 
-.order-button-container {
-    text-align: right;
-}
-
-.order-button-container button {
-    margin-top: 30px;
-    height: 50px;
-    width: 200px;
-    font-size: 1.25em;
-    background: coral;
-    color: white;
+#order-button {
+    background-color: blue;
 }
 
 table {
     border-collapse: collapse;
     border: 1px solid #aaa;
-}
-
-thead {
-    background: #444;
-    color: white;
-}
-
-table th, table td {
-    text-align: right;
+    text-align: center;
     padding: 10px;
-}
-
-.align-left {
-    text-align: left;
-}
-
-tbody {
-    background: white;
+    background-color: white;
+    margin: auto;
+    max-width: 850px;
+    max-height: 850px;
+    width: 100%;
+    height: 100%;
 }
 
 tbody tr:nth-child(even) {
-    background: #eee;
+    background: rgb(241, 238, 255);
 }
 
-tbody td {
-    font-size: 0.9rem;
-}
-
-.line-item-total {
-    font-weight: bolder;
-}
-
-tfoot {
-    background: #999;
-    color: white;
+tfoot, thead {
+    background: cornsilk;
+    font-weight: bold;
+    font-style: italic;
 }

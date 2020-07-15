@@ -9,7 +9,6 @@ export function renderTableRow(cartItem, clothesItem) {
 
     const nameTd = document.createElement('td');
     nameTd.textContent = clothesItem.name;
-    nameTd.classList.add('align-left');
 
     const quantityTd = document.createElement('td');
     quantityTd.textContent = cartItem.quantity;

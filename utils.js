@@ -25,13 +25,13 @@ export function calcLineTotal(quantity, price) {
     return roundCurrency(amount);
 }
 
-export function calcOrderTotal(cart, fruits) {
+export function calcOrderTotal(cart, clothesItem) {
     let orderTotal = 0;
 
     for (let i = 0; i < cart.length; i++) {
         const lineItem = cart[i];
-        const fruit = findById(fruits, lineItem.id);
-        const lineTotal = calcLineTotal(lineItem.quantity, fruit.price);
+        const item = findById(clothesItem, lineItem.id);
+        const lineTotal = calcLineTotal(lineItem.quantity, item.price);
         orderTotal += lineTotal;
     }
 
