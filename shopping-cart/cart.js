@@ -28,7 +28,7 @@ export const cart = [
         quantity: 2
     },
     {
-        id: 'navy=pants',
+        id: 'navy-pants',
         quantity: 2
     }
 ]
