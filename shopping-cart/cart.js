@@ -21,12 +21,3 @@ export const cart = [
     }
 ]
 
-export function findById(arrayName, idName) {
-    let item = {};
-    for (let i = 0; i < arrayName.length; i++) {
-        if (arrayName[i].id === idName) {
-            item = arrayName[i];
-        }
-    }
-    return item;
-}

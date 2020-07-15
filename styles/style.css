@@ -39,3 +39,23 @@ section {
 #product-list {
     list-style: none;
 }
+
+table {
+    display: inline-block;
+    border: double 2px darkorange;
+    padding: 10px;
+    background-color: grey;
+    color: cornsilk;
+}
+
+th {
+    border: solid 2px white;
+    padding: 10px;
+}
+
+td {
+    border: dotted 2px cornflowerblue;
+    height: 25px;
+    padding: 10px;
+    text-align: left;
+}
