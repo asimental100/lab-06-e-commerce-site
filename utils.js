@@ -37,3 +37,10 @@ export function calcOrderTotal(cart, clothesItem) {
 
     return roundCurrency(orderTotal);
 }
+
+export function getCart() {
+    const rawCart = localStorage.getItem('cart');
+    let cart = JSON.parse(rawCart) || [];
+
+    return cart;
+}
