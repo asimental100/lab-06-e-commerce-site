@@ -1,6 +1,6 @@
 import { findById, toUSD, calcOrderTotal, getCart } from '../utils.js';
-import { currentProducts } from '../products/products.js'
-import { renderTableRow } from './renderCart.js'
+import { currentProducts } from '../products/products.js';
+import { renderTableRow } from './renderCart.js';
 
 const tableBody = document.querySelector('tbody');
 const orderTotalCell = document.getElementById('order-total');
