@@ -51,4 +51,4 @@ export function renderClothes(clothingItem) {
     li.appendChild(p);
 
     return li;
-};
+}
