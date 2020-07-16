@@ -5,8 +5,8 @@ const cartButton = document.getElementById('go-to-cart');
 
 const productList = document.getElementById('product-list');
 
-let counter1 = 0;
-let counter2 = 0;
+// let counter1 = 0;
+// let counter2 = 0;
 
 productPageButton.addEventListener('click', () => {
     counter1++;

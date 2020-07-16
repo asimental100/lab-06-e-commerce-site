@@ -31,5 +31,5 @@ export const cart = [
         id: 'navy-pants',
         quantity: 2
     }
-]
+];
 

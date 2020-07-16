@@ -1,4 +1,4 @@
-import { getCart, findById } from '../utils.js'
+import { getCart, findById } from '../utils.js';
 
 export function renderClothes(clothingItem) {
     const li = document.createElement('li');
@@ -25,12 +25,12 @@ export function renderClothes(clothingItem) {
     button.textContent = 'Add';
     button.value = clothingItem.code;
     button.addEventListener('click', () => {
-        console.log('ID: ' + clothingItem.id);
+        // console.log('ID: ' + clothingItem.id);
         const cart = getCart();
 
         const clothesInCart = findById(cart, clothingItem.id);
 
-        if(clothesInCart) {
+        if (clothesInCart) {
             clothesInCart.quantity++;
 
         } else {
@@ -44,11 +44,11 @@ export function renderClothes(clothingItem) {
         const stringyCart = JSON.stringify(cart);
         localStorage.setItem('cart', stringyCart);
 
-        console.log(cart);
-    })
+        // console.log(cart);
+    });
     p.appendChild(button);
 
     li.appendChild(p);
 
     return li;
-}
+};
