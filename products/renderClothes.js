@@ -1,5 +1,7 @@
 import { getCart, findById } from '../utils.js';
 
+const addSpan = document.getElementById('product-added-span');
+
 export function renderClothes(clothingItem) {
     const li = document.createElement('li');
     li.className = clothingItem.category;
@@ -8,6 +10,10 @@ export function renderClothes(clothingItem) {
     const h3 = document.createElement('h3');
     h3.textContent = clothingItem.name;
     li.appendChild(h3);
+
+    const span = document.createElement('span');
+    span.textContent = clothingItem.description;
+    li.appendChild(span);
 
     const img = document.createElement('img');
     img.src = '../images/' + clothingItem.image;
@@ -33,12 +39,17 @@ export function renderClothes(clothingItem) {
         if (clothesInCart) {
             clothesInCart.quantity++;
 
+            addSpan.style.display = 'block';
+            addSpan.textContent = `1 ${clothingItem.name} has been added to your cart, you now have ${clothesInCart.quantity} ${clothingItem.name} in your cart.`;
+
         } else {
             const newClothingItem = {
                 id: clothingItem.id,
                 quantity: 1
             };
             cart.push(newClothingItem);
+            addSpan.style.display = 'block';
+            addSpan.textContent = `1 ${clothingItem.name} has been added to your cart`;
         }
 
         const stringyCart = JSON.stringify(cart);

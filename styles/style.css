@@ -21,6 +21,15 @@ section {
     padding: 20px 0 20px 0;
 }
 
+li span {
+    display: block;
+    text-overflow: clip;
+}
+
+#product-added-span {
+    display: none;
+}
+
 .button {
     display: inline-block;
     padding: 5px 10px;
