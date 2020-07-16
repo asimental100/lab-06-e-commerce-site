@@ -23,7 +23,7 @@ export function renderClothes(clothingItem) {
     
     const button = document.createElement('button');
     button.textContent = 'Add';
-    button.value = clothingItem.code;
+    button.value = clothingItem.id;
     button.addEventListener('click', () => {
         // console.log('ID: ' + clothingItem.id);
         const cart = getCart();
