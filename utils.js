@@ -1,12 +1,12 @@
 export function findById(arrayName, idName) {
-        for (let i = 0; i < arrayName.length; i++) {
-            const item = arrayName[i];
+    for (let i = 0; i < arrayName.length; i++) {
+        const item = arrayName[i];
 
-            if (item.id === idName) {
-                return item;
-            }
+        if (item.id === idName) {
+            return item;
         }
-        return null;
+    }
+    return null;
 }
 
 export function toUSD(number) {

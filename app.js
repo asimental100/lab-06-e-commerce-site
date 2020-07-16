@@ -9,12 +9,12 @@ const productList = document.getElementById('product-list');
 // let counter2 = 0;
 
 productPageButton.addEventListener('click', () => {
-    counter1++;
+    // counter1++;
     // console.log(`Product button clicked ${counter1} times!`);
     productList.textContent = currentProducts;
 });
 
 cartButton.addEventListener('click', () => {
-    counter2++;
+    // counter2++;
     // console.log(`Cart button clicked ${counter2} times!`);
 });
