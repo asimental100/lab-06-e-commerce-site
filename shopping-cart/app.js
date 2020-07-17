@@ -12,6 +12,14 @@ let orderNumber = Math.floor(Math.random() * 99999999);
 
 let cart = getCart();
 
+if (cart.length === 0) {
+    placeOrderButton.style.display = 'none';
+    emptyCartButton.style.display = 'none';
+} else {
+    placeOrderButton.style.display = 'inline-block';
+    emptyCartButton.style.display = 'inline-block';
+}
+
 for (let i = 0; i < cart.length; i++) {
     
     const cartItem = cart[i];
