@@ -21,6 +21,15 @@ section {
     padding: 20px 0 20px 0;
 }
 
+li span {
+    display: block;
+    text-overflow: clip;
+}
+
+#product-added-span {
+    display: none;
+}
+
 .button {
     display: inline-block;
     padding: 5px 10px;
@@ -31,6 +40,12 @@ section {
     border-radius: 5px;
     padding: auto;
     margin: 5px;
+}
+
+input {
+    display: block;
+    margin: auto;
+    max-width: 65px;
 }
 
 #product-list li {
@@ -44,8 +59,12 @@ section {
     margin: auto;
 }
 
-#order-button {
+#place-order-button {
     background-color: blue;
+}
+
+#empty-cart-button {
+    background-color: red;
 }
 
 table {

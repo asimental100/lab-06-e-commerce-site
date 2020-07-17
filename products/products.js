@@ -5,7 +5,7 @@ const navyShirt = {
     size: 'large',
     color: 'navy',
     category: 'shirts',
-    description: 'A 100% Supima Cotton Shirt in Navy',
+    description: '100% Supima Cotton Shirt in Navy',
     price: 25
 };
 
@@ -16,7 +16,7 @@ const blackShirt = {
     size: 'large',
     color: 'black',
     category: 'shirts',
-    description: 'A 100% Supima Cotton Shirt in Black',
+    description: '100% Supima Cotton Shirt in Black',
     price: 25
 };
 
@@ -27,7 +27,7 @@ const greenShirt = {
     size: 'large',
     color: 'green',
     category: 'shirts',
-    description: 'A 100% Supima Cotton Shirt in Green',
+    description: '100% Supima Cotton Shirt in Green',
     price: 25
 };
 
@@ -38,7 +38,7 @@ const redShirt = {
     size: 'large',
     color: 'red',
     category: 'shirts',
-    description: 'A 100% Supima Cotton Shirt in Red',
+    description: '100% Supima Cotton Shirt in Red',
     price: 25
 };
 
@@ -49,7 +49,7 @@ const whiteShirt = {
     size: 'large',
     color: 'white',
     category: 'shirts',
-    description: 'A 100% Supima Cotton Shirt in White',
+    description: '100% Supima Cotton Shirt in White',
     price: 25
 };
 
@@ -60,7 +60,7 @@ const blackPants = {
     size: 'medium',
     color: 'black',
     category: 'pants',
-    description: 'A black pair of mid-weight cotton twill pants',
+    description: 'Midweight cotton twill pants in Black',
     price: 50
 };
 
@@ -71,7 +71,7 @@ const whitePants = {
     size: 'medium',
     color: 'white',
     category: 'pants',
-    description: 'A white pair of mid-weight cotton twill pants',
+    description: 'Midweight cotton twill pants in White',
     price: 50
 };
 
@@ -82,7 +82,7 @@ const navyPants = {
     size: 'medium',
     color: 'navy',
     category: 'pants',
-    description: 'A navy pair of mid-weight cotton twill pants',
+    description: 'Midweight cotton twill pants in Navy',
     price: 50
 };
 
@@ -93,7 +93,7 @@ const greenPants = {
     size: 'medium',
     color: 'green',
     category: 'pants',
-    description: 'A green pair of mid-weight cotton twill pants',
+    description: 'Midweight cotton twill pants in Green',
     price: 50
 };
 
