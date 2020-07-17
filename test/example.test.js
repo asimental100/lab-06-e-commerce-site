@@ -3,6 +3,9 @@
 
 import { renderClothes } from '../products/renderClothes.js';
 import { renderTableRow } from '../shopping-cart/renderCart.js';
+import { calcLineTotal, calcOrderTotal } from '../utils.js';
+import { cart } from '../shopping-cart/cart.js';
+import { currentProducts } from '../products/products.js';
 
 const test = QUnit.test;
 
@@ -47,5 +50,23 @@ test('renders a table row', assert => {
     const stepOne = renderTableRow(cartItem, faceMask);
     const actual = stepOne.outerHTML;
     
+    assert.equal(actual, expected);
+});
+
+test ('calculate line total', assert => {
+    const itemQuantity = 5;
+    const itemPrice = 25;
+    const expected = 125;
+
+    const actual = calcLineTotal(itemPrice, itemQuantity);
+
+    assert.equal(actual, expected);
+});
+
+test ('calculate order total from multiple line totals', assert => {
+
+    const expected = 515;
+    const actual = calcOrderTotal(cart, currentProducts);
+
     assert.equal(actual, expected);
 });
