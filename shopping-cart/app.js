@@ -30,7 +30,7 @@ orderTotalCell.textContent = toUSD(orderTotal);
 placeOrderButton.addEventListener('click', () => {
     let orderConfirmation = confirm('Are you SURE you would like to place an order?');
     if (orderConfirmation) {
-        alert(`Thank you for your order! Your order confirmation number is: ${orderNumber}`);
+        alert(`Thank you for your order!\nYour order confirmation number is: ${orderNumber}`);
         localStorage.clear();
         location.reload();
     } else {

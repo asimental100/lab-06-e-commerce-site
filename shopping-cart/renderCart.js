@@ -19,7 +19,6 @@ export function renderTableRow(cartItem, clothesItem) {
     const totalTd = document.createElement('td');
     const totalPrice = (clothesItem.price * cartItem.quantity);
     totalTd.textContent = makeReadablePrice(totalPrice);
-    totalTd.classList.add('line-item-total');
 
     tr.appendChild(nameTd);
     tr.appendChild(quantityTd);
