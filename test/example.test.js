@@ -21,7 +21,7 @@ test('renders a clothing item', assert => {
         price: 5
     };
     
-    const expected = '<li class="face-mask" title="Reusable 4-Layer Silk-Blend Face Mask"><h3>Face Mask</h3><span>Reusable 4-Layer Silk-Blend Face Mask</span><img src="../images/./face-mask.jpg" alt="Face Mask image"><p class="price">$5.00<button value="face-mask">Add</button></p></li>';
+    const expected = '<li class="face-mask" title="Reusable 4-Layer Silk-Blend Face Mask"><h3>Face Mask</h3><span>Reusable 4-Layer Silk-Blend Face Mask</span><img src="../images/./face-mask.jpg" alt="Face Mask image"><p class="price">$5.00<input type="number" min="1" max="99"><button value="face-mask">Add</button></p></li>';
     
     const stepOne = renderClothes(faceMask);
     const actual = stepOne.outerHTML;

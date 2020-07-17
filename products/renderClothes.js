@@ -26,6 +26,13 @@ export function renderClothes(clothingItem) {
     const usd = '$' + clothingItem.price.toFixed(2);
 
     p.textContent = usd;
+
+    const quantitySelector = document.createElement('input');
+    quantitySelector.type = 'number';
+    quantitySelector.min = 1;
+    quantitySelector.max = 99;
+    quantitySelector.value = 1;
+    p.appendChild(quantitySelector);
     
     const button = document.createElement('button');
     button.textContent = 'Add';
@@ -37,19 +44,19 @@ export function renderClothes(clothingItem) {
         const clothesInCart = findById(cart, clothingItem.id);
 
         if (clothesInCart) {
-            clothesInCart.quantity++;
+            clothesInCart.quantity = Number(clothesInCart.quantity) + Number(quantitySelector.value);
 
             addSpan.style.display = 'block';
-            addSpan.textContent = `1 ${clothingItem.name} has been added to your cart, you now have ${clothesInCart.quantity} ${clothingItem.name} in your cart.`;
+            addSpan.textContent = `${quantitySelector.value} ${clothingItem.name} has been added to your cart, you now have ${clothesInCart.quantity} ${clothingItem.name} in your cart.`;
 
         } else {
             const newClothingItem = {
                 id: clothingItem.id,
-                quantity: 1
+                quantity: quantitySelector.value
             };
             cart.push(newClothingItem);
             addSpan.style.display = 'block';
-            addSpan.textContent = `1 ${clothingItem.name} has been added to your cart`;
+            addSpan.textContent = `${quantitySelector.value} ${clothingItem.name} has been added to your cart`;
         }
 
         const stringyCart = JSON.stringify(cart);
