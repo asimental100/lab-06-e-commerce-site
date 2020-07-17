@@ -6,6 +6,7 @@ export function renderClothes(clothingItem) {
     const li = document.createElement('li');
     li.className = clothingItem.category;
     li.title = clothingItem.description;
+    li.style.border = 'solid white 1px';
 
     const h3 = document.createElement('h3');
     h3.textContent = clothingItem.name;
