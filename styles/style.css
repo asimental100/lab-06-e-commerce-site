@@ -53,8 +53,12 @@ li span {
     margin: auto;
 }
 
-#order-button {
+#place-order-button {
     background-color: blue;
+}
+
+#empty-cart-button {
+    background-color: red;
 }
 
 table {
